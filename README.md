@@ -59,10 +59,12 @@ This will automatically:
 - Runs `convert.py` only if `getList.py` returns **non-empty results**.
 - Deletes the CSV file after conversion.
 - Sends an email with the final Excel file (`sendmail.py`).
+- Runs `python3 runActive.py` in a loop, paginating through API results.
 
 ### 4️⃣ **sendmail.py** - Send Email Notification
 - Sends an email with the processed Excel file as an attachment.
 - Uses an SMTP server for email delivery.
+- try to run: `python3 sendmail.py "data-active-past/filename.xlsx"`
 
 ---
 
